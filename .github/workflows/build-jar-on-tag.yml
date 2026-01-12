@@ -6,6 +6,9 @@ on:
       - 'baseline-*'
       - 'v*'
 
+permissions:
+  contents: write   # 关键：允许创建 Release + 上传 Assets
+
 jobs:
   build:
     runs-on: ubuntu-latest
